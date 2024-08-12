@@ -4,6 +4,12 @@ from PIL import Image, ImageTk
 # Functions
 def frame_to_run(root):
     pass
+def choose_folder():
+    global cfolder
+    cfolder = ctk.filedialog.askdirectory(title="select a file")
+    if cfolder == "":
+        cfolder = os.getcwd()
+    folder_lab.configure(text = f"folder: {cfolder}")
 # window configs
 root = ctk.CTk()
 root.title("File Organizer")
@@ -17,7 +23,7 @@ title_lab = ctk.CTkLabel(root,text="",image=photo_image)
 title_lab.pack(padx = 20,pady = 25)
 # choose folder
 folderframe = ctk.CTkFrame(root)
-folderbtn = ctk.CTkButton(folderframe,text=" Choose Folder ")
+folderbtn = ctk.CTkButton(folderframe,text=" Choose Folder ",command=choose_folder)
 folderbtn.pack(side = ctk.LEFT,padx = 10,pady = 10)
 folder_lab = ctk.CTkLabel(folderframe,text=f" folder: {cfolder}",font=("",15))
 folder_lab.pack(side = ctk.RIGHT ,padx = 10)
