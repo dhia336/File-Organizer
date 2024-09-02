@@ -1,0 +1,10 @@
+Videos:mp4,avi,mkv,mov,wmv,flv,webm
+Audio:mp3,wav,aac,flac,ogg,midi,mid
+Docs:doc,docx,xls,xlsx,ppt,pptx,pdf,txt,rtf,odt
+Images:jpg,jpeg,png,gif,bmp,tif,tiff,webp,svg,raw,arw,cr2,nef
+Executable Files:exe,app,sh,bin,bat,cmd
+Web-Files:html,htm,css,js,php,xml,json
+Disk-Image-Files:iso,vdi,vhd,dmg
+System-Files:sys,dll,ini,log,tmp
+Database-Files:sql,mdb,accdb,sqlite,db,ora,dbf
+Compressed-Files:zip,rar,7z,tar,gz
